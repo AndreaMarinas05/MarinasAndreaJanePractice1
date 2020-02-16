@@ -1,0 +1,42 @@
+<!--Mariñas, Andrea Jane B. 2-ITF
+    ICS2609 Prof. Alex Santos
+    Practice Lab: Form Validation HTML-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/script.js"></script>
+        <title>Create A New Event</title>
+    </head>
+    <body>
+            <h1>Event Form</h1><hr>
+            <form>
+                <label>Event Type:
+                    <select required="required" id="eventType">
+                        <option value="" disabled selected>Choose one</option></option>
+                        <option value="Seminar">Seminar</option>
+                        <option value="Conference">Conference</option>
+                        <option value="Trade Shows">Trade Shows</option>
+                        <option value="Workshop">Workshops</option>
+                        <option value="Reunion">Reunion</option>
+                        <option value="Party">Party</option>
+                        <option value="Gala">Gala</option>
+                    </select>
+                </label><br><br>
+                <label>Event Title: <input id="eventName" class="EventTitle" type="text" required></label><br><br>
+                <label>Event Dates: <input id="fromDate" type="date" required> to <input id="toDate" type="date" required></label><br><br>
+                <label>Posting Date: <input id="postDate" type="date" required></label><br><br>
+                <label><input id ="1" type="checkbox">Is Registration Required?<br><br></label>
+                <label><input type="checkbox">Is this event associated with any Family Programs?<br><br></label>
+                <label><input type="checkbox">Upon Registration Completion, Are Users to Receive an Auto Generated Email?<br><br></label>
+                <label><input type="checkbox">Is There a Point of Contact?<br><br></label>
+                <label><input type="checkbox">Is There a Hosting Command Point of Contact?<br><br></label>
+                <div style="text-align:center"> 
+                    <input class="submission" type="submit" value="Save" onclick="saveEvent()">
+                    <input class="submission" type="button" value="Cancel" onclick="cancelEvent()">
+                </div>
+            </form>
+    </body>
+    </html>
