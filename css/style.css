@@ -21,6 +21,13 @@
         display:table;
         margin:auto;
     }
+
+    fieldset
+    {
+        display:table;
+        margin-left: 250px;
+        margin-right:250px;
+    }
     
     h1
     {

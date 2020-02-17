@@ -24,7 +24,7 @@
             "Event Name: " + nameEvent +  "\n" +
             "Start Date: " + startDate +  "\n" +
             "End Date: " + endDate +  "\n" +
-            "Posting Date:" + postingDate);
+            "Posting Date: " + postingDate);
         }
     }
     
